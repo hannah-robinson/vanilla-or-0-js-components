@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>CSS Scroll Snap Carousel/Slider</title>
+  </head>
+  <body>
+    <section id="shopify-section-carousel" class="shopify-section">
+      <div class="slider slider--fullscreen">
+        <nav>
+          <button title="Next product" data-prev>&larr;</button>
+          <button title="Previous product" data-prev>&rarr;</button>
+        </nav>
+        <div class="slider__slides" data-slider>
+          <!--       
+      {%- for product in section.settings.featured_collection.products limit: section.settings.number_of_products_to_show -%}
+        <figure class="slider__slide" data-slide>
+          {%- render 'product-card', product: product -%}
+        </figure>
+      {%- endfor -%}
+  -->
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
